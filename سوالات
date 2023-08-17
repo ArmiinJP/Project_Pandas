@@ -1,0 +1,23 @@
+فرایند sampling دیتا در bagging با در نظر گرفتن بالانس بودن دیتا
+کلا هم بگو اگر دیتا بالانس نباشه چی میشه
+
+متریک های ارزیابی یک گزارش یک پاراگرافی نوشته شود
+persion
+
+این inframe چیست
+
+
+
+کدهای مربوط به تبدیل sql به پانداس:
+https://github.com/ArmiinJP/Project_Pandas/tree/main/SqlToPandas/bank_id
+کدهای مربوط به داکیومنت  random forest:
+https://github.com/ArmiinJP/Documents/tree/master/Random_Forest
+کدهای مربوط به random forest:
+https://github.com/ArmiinJP/Project_Random_Forest
+
+
+
+
+round(t['Pclass'].value_counts(normalize=True)*100, 2)
+
+

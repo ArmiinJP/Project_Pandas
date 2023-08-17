@@ -1,0 +1,183 @@
+البته که براتون انجام می‌دهم! در ادامه یک لیست از 60 تابع پرکاربرد در پانداس را برای شما تهیه کرده‌ام. همچنین با توجه به درخواست شما، هر تابع را همراه با یک مثال و آرگومان‌های مهم آن توضیح داده‌ام. امیدوارم مفید واقع شود:
+
+1. read_csv(): برای خواندن داده ها از یک فایل CSV
+مثال: df = pd.read_csv('data.csv')
+
+2. head(): برای نمایش چند ردیف اول از داده ها
+مثال: df.head()
+
+3. tail(): برای نمایش چند ردیف آخر از داده ها
+مثال: df.tail()
+
+4. info(): برای نمایش اطلاعات خلاصه‌ای از داده ها
+مثال: df.info()
+
+5. describe(): برای نمایش آمار خلاصه از داده ها (مثل میانگین، مینیمم، ماکزیمم و ...)
+مثال: df.describe()
+
+6. shape: برای نمایش ابعاد داده ها (تعداد سطرها و ستون ها)
+مثال: df.shape
+
+7. columns: برای نمایش نام ستون ها
+مثال: df.columns
+
+8. dtypes: برای نمایش نوع داده هر ستون
+مثال: df.dtypes
+
+9. unique(): برای نمایش مقادیر یکتا در یک ستون
+مثال: df['column_name'].unique()
+
+10. value_counts(): برای شمارش تعداد تکرار هر مقدار یک ستون
+مثال: df['column_name'].value_counts()
+
+11. isna(): برای تشخیص داده های نامعتبر (NaN) در دیتافریم
+مثال: df.isna()
+
+12. dropna(): برای حذف سطرهایی که داده های نامعتبر (NaN) در آنها وجود دارد
+مثال: df.dropna()
+
+13. fillna(): برای پرکردن داده های نامعتبر (NaN) با مقدار مشخص
+مثال: df.fillna(value)
+
+14. replace(): برای جایگزین کردن یک مقدار با مقدار دیگر در دیتافریم
+مثال: df.replace(old_value, new_value)
+
+15. drop(): برای حذف ستون یا سطر از دیتافریم
+مثال: df.drop('column_name', axis=1)
+
+16. groupby(): برای تجمیع داده ها بر اساس یک ستون
+مثال: df.groupby('column_name').mean()
+
+17. sort_values(): برای مرتب کردن دیتا بر اساس یک ستون
+مثال: df.sort_values('column_name')
+
+18. apply(): برای اعمال یک تابع روی یک ستون یا سطر
+مثال: df.apply(function, axis=1)
+
+19. merge(): برای ادغام دو دیتافریم بر اساس یک ستون یا شرط مشخص
+مثال: pd.merge(df1, df2, on='column_name')
+
+20. concat(): برای اتصال چندین دیتافریم به هم
+مثال: pd.concat([df1, df2]
+
+21. pivot_table(): برای ساخت جدول محوری (Pivot table) بر اساس یک ستون
+مثال: pd.pivot_table(df, values='column_name', index='index_column', columns='column_name')
+
+22. unique(): برای دریافت مقادیر یکتای یک ستون به همراه تعداد تکرار هر کدام
+مثال: df['column_name'].unique()
+
+23. nunique(): برای شمارش تعداد مقادیر یکتا در یک ستون
+مثال: df['column_name'].nunique()
+
+24. str.contains(): برای جستجوی الگوها در یک ستون رشته‌ای
+مثال: df[df['column_name'].str.contains('pattern')]
+
+25. between(): برای انتخاب ردیف‌هایی که مقدار یک ستون در یک بازه قرار دارد
+مثال: df[df['column_name'].between(start, end)]
+
+26. iloc: برای دسترسی به عناصر دیتافریم بر اساس شماره سطر و ستون
+مثال: df.iloc[row_index, col_index]
+
+27. loc: برای دسترسی به عناصر دیتافریم بر اساس برچسب سطر و ستون
+مثال: df.loc[row_label, col_label]
+
+28. loc[]: برای اندیس‌گذاری با شرایط قابل سفارشی سازی
+مثال: df.loc[(condition_1) & (condition_2)]
+
+29. map(): برای اعمال یک تابع به هر المان یک ستون
+مثال: df['column_name'].map(function)
+
+30. drop_duplicates(): برای حذف ردیف های تکراری از دیتافریم
+مثال: df.drop_duplicates()
+
+31. astype(): برای تبدیل نوع داده یک ستون به نوع دیگر
+مثال: df['column_name'].astype(new_type)
+
+32. iterrows(): برای حلقه زدن بر روی سطرها یک دیتافریم
+مثال: for index, row in df.iterrows():
+
+33. dt.year: برای استخراج سال از ستون زمانی
+مثال: df['date_column'].dt.year
+
+34. dt.month: برای استخراج ماه از ستون زمانی
+مثال: df['date_column'].dt.month
+
+35. dt.day: برای استخراج روز از ستون زمانی
+مثال: df['date_column'].dt.day
+
+36. applymap(): برای اعمال یک تابع به هر المان دیتافریم
+مثال: df.applymap(function)
+
+37. mask(): برای جایگزین کردن داده های مشخص در صورتی که شرط مشخصی برقرار نباشد
+مثال: df.mask(condition, new_value)
+
+38. pivot(): برای ساخت جدول محوری (Pivot table) بر اساس داده ها
+مثال: df.pivot(index='index_column', columns='column_names', values='values')
+
+39. sample(): برای گرفتن نمونه تصادفی از دیتافریم
+مثال: df.sample(n)
+
+40. to_csv(): برای ذخیره داده ها در یک فایل CSV
+مثال: df.to_csv('data.csv')
+
+41. to_excel(): برای ذخیره داده ها در یک فایل اکسل
+مثال: df.to_excel('data.xlsx')
+
+42. set_index(): برای تغییر ستونی به ایندکس دادافریم
+مثال: df.set_index('column_name')
+
+43. reset_index(): برای بازنشانی ایندکس دادافریم
+مثال: df.reset_index()
+
+44. plot(): برای رسم نمودار از داده ها
+مثال: df.plot(x='column_name', y='column_name', kind='line')
+
+45. min(): برای یافتن کمترین مقدار در ستون
+مثال: df['column_name'].min()
+
+46. max(): برای یافتن بیشترین مقدار در ستون
+مثال: df['column_name'].max()
+
+47. mean(): برای محاسبه میانگین مقادیر در ستون
+مثال: df['column_name'].mean()
+
+48. median(): برای محاسبه میانه مقادیر در ستون
+مثال: df['column_name'].median()
+
+49. sum(): برای جمع مقادیر در ستون
+مثال: df['column_name'].sum()
+
+50. count(): برای شمارش تعداد ردیف‌های موجود در ستون
+مثال: df['column_name'].count()
+
+51. corr(): برای محاسبه ضریب همبستگی بین دو ستون
+مثال: df[['column_1', 'column_2']].corr()
+
+52. cov(): برای محاسبه کوواریانس بین دو ستون
+مثال: df[['column_1', 'column_2']].cov()
+
+53. plot.box(): برای رسم نمودار جعبه‌ای از داده ها
+مثال: df.plot.box()
+
+54. plot.hist(): برای رسم نمودار هیستوگرام از داده ها
+مثال: df.plot.hist()
+
+55. plot.bar(): برای رسم نمودار میله‌ای از داده ها
+مثال: df.plot.bar(x='column_name', y='column_name')
+
+56. plot.scatter(): برای رسم نمودار پراکندگی از داده ها
+مثال: df.plot.scatter(x='column_name', y='column_name')
+
+57. plot.line(): برای رسم نمودار خطی از داده ها
+مثال: df.plot.line(x='column_name', y='column_name')
+
+58. plot.area(): برای رسم نمودار مساحتی از داده ها
+مثال: df.plot.area(x='column_name', y='column_name')
+
+59. plot.pie(): برای رسم نمودار دایره‌ای از داده ها
+مثال: df.plot.pie()
+
+60. str.lower(): برای تبدیل کردن رشته‌های ستون به حروف کوچک
+مثال: df['column_name'].str.lower()
+
+این تابع‌ها فقط یک بخش کوچک از توابع مفید موجود در پانداس می‌باشند؛ با این حال، امیدوارم که این لیست به شما کمک کند.
